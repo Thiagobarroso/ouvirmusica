@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+
+    <!--Estilo-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-img">
+        <img id="imagemMusica" src="/assets/imagens/vulgofk.jpg" alt="" />
+      </div>
+
+      <div class="info-musica">
+        <h2 id="tituloMusica">2023</h2>
+        <p id="paragrafoMusica">Vulgo FK, Ryan SP - 2023</p>
+      </div>
+
+      <div class="botoes">
+        <button id="botaoAnterior" href="">
+          <img src="/assets/imagens/btn-voltar.png" alt="" />
+        </button>
+
+        <button id="botaoPlay">
+          <img src="/assets/imagens/btn-player.png" alt="" />
+        </button>
+
+        <button id="botaoProximo" href="">
+          <img src="/assets/imagens/btn-passar.png" alt="" />
+        </button>
+      </div>
+
+      <div id="audio-container">
+        <audio id="meuAudio">
+          <source
+            src="/assets/audio/Vulgo FK, Ryan SP - 2023 _ Vulgo FK - Perdas (Duplo Clipe Oficial).mp4"
+            type="audio/mp3"
+          />
+        </audio>
+
+        <div id="controles">
+          <div id="barra-progresso">
+            <div id="progresso-atual"></div>
+
+            <div class="tempo">
+              <div id="tempoAtual"></div>
+              <div id="tempoTotal"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

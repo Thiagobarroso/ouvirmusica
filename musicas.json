@@ -1,0 +1,43 @@
+[
+  {
+    "titulo": "Melhor Agora",
+    "caminho": "assets/audio/SnapInsta.io - Filipe Ret ✦ Melhor Agora (Prod. Dallass_Honaiser_LODONI) (64 kbps).mp3",
+    "imagem": "assets/imagens/ret.png",
+    "paragrafo": "Filipe Ret"
+  },
+
+  {
+    "titulo": "Luz na Caminhada",
+    "caminho": "assets/audio/SnapInsta.io - 12. L7NNON - LUZ NA CAMINHADA part. Pescadinha & Bolin _ HHR (128 kbps).mp3",
+    "imagem": "assets/imagens/luznacaminhaad.jpg",
+    "paragrafo": "L7NNON"
+  },
+
+  {
+    "titulo": "Engana Dizendo...",
+    "caminho": "assets/audio/SnapInsta.io - 2.  VEIGH - ENGANA DIZENDO QUE AMA FT. TZ DA CORONEL (Dos Prédios Deluxe) (64 kbps).mp3",
+    "imagem": "assets/imagens/veigh.jpg",
+    "paragrafo": "Veigh e Tz da Coronel"
+  },
+
+  {
+    "titulo": "2023",
+    "caminho": "assets/audio/Vulgo FK, Ryan SP - 2023 _ Vulgo FK - Perdas (Duplo Clipe Oficial).mp4",
+    "imagem": "assets/imagens/vulgofk.jpg",
+    "paragrafo": "Vulgo FK, Ryan SP"
+  },
+
+  {
+    "titulo": "Vim De Lá",
+    "caminho": "assets/audio/SnapInsta.io - L7NNON - Vim De Lá (prod. Nagalli) (128 kbps).mp3",
+    "imagem": "assets/imagens/vimdela.jpg",
+    "paragrafo": "L7NNON"
+  },
+
+  {
+    "titulo": "Gratidão",
+    "caminho": "assets/audio/SnapInsta.io - 15. L7NNON - GRATIDÃO _ HHR (128 kbps).mp3",
+    "imagem": "assets/imagens/capa.png",
+    "paragrafo": "L7NNON"
+  }
+]

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: #0f0d13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #2a2141;
+  border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  color: white;
+  padding: 39px;
+}
+
+.container-img img {
+  width: 210.63px;
+  height: 210.63px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.info-musica {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-musica h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.info-musica p {
+  font-size: 19px;
+  color: #e1e1e6;
+}
+
+/* Estilizando a barra de progresso */
+#barra-progresso {
+  height: 10px;
+  background-color: #eee;
+  margin: 10px 0;
+  position: relative;
+}
+
+/* Estilizando a parte preenchida da barra de progresso */
+#progresso-atual {
+  width: 190px;
+  height: 6px;
+  background-color: #c0bfc4;
+  border-radius: 50px;
+}
+
+#barra-progresso {
+  height: 6px;
+  background-color: #5e586f;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.botoes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoes a {
+  cursor: pointer;
+}
+
+.tempo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 50px 0px;
+}
+
+#tempoTotal,
+#tempoAtual {
+  font-size: 13px;
+  color: #c4c4cc;
+}
+
+#audio-container {
+  width: 100%;
+}
