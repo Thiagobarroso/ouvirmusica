@@ -5,6 +5,10 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+*:focus {
+  outline: none;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -97,7 +101,7 @@ body {
 .tempo {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0px 50px 0px;
+  padding-top: 10px;
 }
 
 #tempoTotal,
