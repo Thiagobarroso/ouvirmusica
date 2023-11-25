@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Player</title>
 
     <!--Estilo-->
     <link rel="stylesheet" href="style.css" />
@@ -15,16 +14,33 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!--favicon-->
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon/download.png"
+      type="image/x-icon"
+    />
+    <title>Player</title>
   </head>
   <body>
+    <div class="buscar">
+      <div>
+        <input type="text" placeholder="Pesquisar" />
+      </div>
+      <div class="albuns">
+        <ul class="albuns-itens"></ul>
+      </div>
+    </div>
+
     <div class="container">
       <div class="container-img">
-        <img id="imagemMusica" src="/assets/imagens/vulgofk.jpg" alt="" />
+        <img id="imagemMusica" />
       </div>
 
       <div class="info-musica">
-        <h2 id="tituloMusica">2023</h2>
-        <p id="paragrafoMusica">Vulgo FK, Ryan SP - 2023</p>
+        <h2 id="tituloMusica"></h2>
+        <p id="paragrafoMusica"></p>
       </div>
 
       <div class="botoes">

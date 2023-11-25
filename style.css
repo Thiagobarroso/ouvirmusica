@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  border: none;
+  list-style: none;
 }
 
 *:focus {
@@ -21,11 +23,51 @@ button {
 }
 
 body {
+  gap: 25px;
   height: 100vh;
   background: #0f0d13;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.buscar input {
+  width: 290px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #2a2141;
+  color: #c4c4cc;
+  padding: 20px 40px 20px 10px;
+  font-size: 18px;
+}
+
+.buscar {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  gap: 10px;
+  height: 500px;
+}
+
+.albuns {
+  background-color: #2a2141;
+  color: #c4c4cc;
+  overflow: auto;
+}
+
+.albuns img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.albuns ul li {
+  display: flex;
+  border-bottom: 5px solid #0f0d13;
+  cursor: pointer;
+  padding: 5px 5px;
 }
 
 .container {

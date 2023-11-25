@@ -1,5 +1,12 @@
 [
   {
+    "titulo": "Minha Vida é um...",
+    "caminho": "assets/audio/Minha Vida é um Filme.mp3",
+    "imagem": "assets/imagens/teto.jpg",
+    "paragrafo": "Teto"
+  },
+
+  {
     "titulo": "Melhor Agora",
     "caminho": "assets/audio/SnapInsta.io - Filipe Ret ✦ Melhor Agora (Prod. Dallass_Honaiser_LODONI) (64 kbps).mp3",
     "imagem": "assets/imagens/ret.png",
@@ -39,5 +46,26 @@
     "caminho": "assets/audio/SnapInsta.io - 15. L7NNON - GRATIDÃO _ HHR (128 kbps).mp3",
     "imagem": "assets/imagens/capa.png",
     "paragrafo": "L7NNON"
+  },
+
+  {
+    "titulo": "Sintoniza",
+    "caminho": "assets/audio/IZA, Djonga - Sintoniza (Visualizer).mp3",
+    "imagem": "assets/imagens/iza.jpg",
+    "paragrafo": "IZA, Djonga"
+  },
+
+  {
+    "titulo": "O Preço",
+    "caminho": "assets/audio/Charlie Brown Jr- O Preço..mp3",
+    "imagem": "assets/imagens/charliebrown.jpg",
+    "paragrafo": "Charlie Brown jr"
+  },
+
+  {
+    "titulo": "Pretty Please",
+    "caminho": "assets/audio/Dua Lipa - Pretty Please (Official Lyrics Video).mp3",
+    "imagem": "assets/imagens/dualipa.jpeg",
+    "paragrafo": "Dua Lipa"
   }
 ]

@@ -81,10 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   botaoProximo.addEventListener("click", function () {
-    meuAudio.autoplay();
+    meuAudio.play();
   });
-
-  console.log(meuAudio);
 
   meuAudio.addEventListener("loadedmetadata", function () {
     const duracaoTotal = formatarTempo(meuAudio.duration);
@@ -102,14 +100,46 @@ document.addEventListener("DOMContentLoaded", function () {
     imagemMusica.src = musicaAtual.imagem;
     tituloMusica.innerText = musicaAtual.titulo;
     paragrafoMusica.innerText = musicaAtual.paragrafo;
-    playAudio();
   }
 
-  function proximoAuto() {
-    if (tempoTotalElemento === tempoAtualElemento) {
-      trocarMusica();
-    }
-  }
+  //listrar musicas
+  const albunsList = document.querySelector(".albuns-itens");
+  
+
+  fetch("musicas.json")
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((musica) => {
+        const li = document.createElement("li");
+        const imagem = document.createElement("img");
+        const albunsInfo = document.createElement("div");
+        const titulo = document.createElement("h4");
+        const ano = document.createElement("p");
+
+        // Set attributes
+        imagem.src = musica.imagem;
+        albunsInfo.className = "albuns-info";
+        titulo.textContent = musica.titulo;
+        ano.textContent = musica.paragrafo;
+
+        albunsInfo.appendChild(titulo);
+        albunsInfo.appendChild(ano);
+
+        li.appendChild(imagem);
+        li.appendChild(albunsInfo);
+
+        albunsList.appendChild(li);
+
+        li.addEventListener("click", function () {
+          const musicaAtual = listaDeMusicas[musicaAtualIndex];
+          meuAudio.src = musica.caminho;
+          imagemMusica.src = musica.imagem;
+          tituloMusica.innerText = musica.titulo;
+          paragrafoMusica.innerText = musica.paragrafo;
+          meuAudio.play();
+        });
+      });
+    });
 
   function formatarTempo(segundos) {
     const minutos = Math.floor(segundos / 60);
@@ -118,6 +148,4 @@ document.addEventListener("DOMContentLoaded", function () {
       segundosRestantes < 10 ? `0${segundosRestantes}` : segundosRestantes;
     return `${minutos}:${segundosFormatados}`;
   }
-
-  proximoAuto();
 });
