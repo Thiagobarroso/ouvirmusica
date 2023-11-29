@@ -67,5 +67,12 @@
     "caminho": "assets/audio/Dua Lipa - Pretty Please (Official Lyrics Video).mp3",
     "imagem": "assets/imagens/dualipa.jpeg",
     "paragrafo": "Dua Lipa"
+  },
+
+  {
+    "titulo": "A Meu Favor",
+    "caminho": "assets/audio/Filipe Ret ✦ A Meu Favor (Ft. Kayuá - Prod. Dallass-Honaiser) (128 kbps).mp3",
+    "imagem": "assets/imagens/retameufavor.jpeg",
+    "paragrafo": "Filipe Ret Ft. Kayuá"
   }
 ]

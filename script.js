@@ -104,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //listrar musicas
   const albunsList = document.querySelector(".albuns-itens");
-  
 
   fetch("musicas.json")
     .then((response) => response.json())
@@ -148,4 +147,24 @@ document.addEventListener("DOMContentLoaded", function () {
       segundosRestantes < 10 ? `0${segundosRestantes}` : segundosRestantes;
     return `${minutos}:${segundosFormatados}`;
   }
+});
+
+/*esconder elemento */
+document.addEventListener("DOMContentLoaded", function () {
+  const albunsElement = document.getElementById("esconder");
+  const elementEsconder = document.querySelector(".albuns");
+  const elementBody = document.querySelector("body");
+
+  albunsElement.addEventListener("click", function () {
+    if (window.innerWidth < 600) {
+      elementEsconder.style.display =
+        elementEsconder.style.display === "none" ? "block" : "none";
+    } else if (window.ineerWidth > 600) {
+      elementEsconder.style.display === "block";
+    }
+  });
+
+  elementBody.addEventListener("click", function () {
+    elementEsconder.style.display === "none";
+  });
 });

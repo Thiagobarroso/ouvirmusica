@@ -46,13 +46,23 @@ body {
   flex-direction: column;
   width: 290px;
   gap: 10px;
-  height: 500px;
+  height: 492px;
+  position: relative;
+  z-index: 2;
+}
+
+.buscar span {
+  position: absolute;
+  color: #c4c4cc;
+  left: 260px;
+  top: 8px;
 }
 
 .albuns {
   background-color: #2a2141;
   color: #c4c4cc;
   overflow: auto;
+  display: block;
 }
 
 .albuns img {
@@ -105,6 +115,35 @@ body {
 .info-musica p {
   font-size: 19px;
   color: #e1e1e6;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  .albuns {
+    overflow: auto;
+    display: none;
+  }
+
+  .buscar {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    gap: 10px;
+    height: 300px;
+    position: relative;
+    top: -140px;
+    z-index: 2;
+  }
 }
 
 /* Estilizando a barra de progresso */
